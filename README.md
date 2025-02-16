@@ -1,4 +1,4 @@
-# Project-CMTH380
+# Manufacturing Data Analytics tool
 
 ## Overview
 This repository contains the solutions and analysis for the CMTH380 project. The project involves statistical analysis of three data samples using various statistical techniques, including histogram visualization, confidence interval estimation, and hypothesis testing.
@@ -11,11 +11,6 @@ To run the analysis in R, you may need the following libraries:
 - `ggplot2`
 - `stats`
 - `dplyr`
-
-## Project Structure
-- **Section-1.pdf**: Contains the statistical analysis, plots, and results.
-- **data.txt**: The dataset used for analysis.
-- **code/**: Directory containing the R scripts used for analysis.
 
 ## Analysis
 ### Part A: Histogram, Mean, and Variance
@@ -50,14 +45,3 @@ For Sample 1:
 - Testing H0: \\(p \\geq 0.10\\) vs H1: \\(p < 0.10\\)
   - p-value = 0.00078 (rejects null hypothesis)
   - Conclusion: The proportion of defective parts is significantly less than 10%.
-
-## How to Run
-To reproduce the analysis in R:
-```r
-# Load data
-read_data <- read.table("data.txt")
-
-# Extract samples
-sample_1 <- read_data[,1]
-sample_2 <- read_data[,2]
-sample_3 <- read_data[,3]
